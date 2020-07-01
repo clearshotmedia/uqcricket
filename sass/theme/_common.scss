@@ -1,0 +1,150 @@
+
+html,body{
+	margin:0px;
+	padding:0px;
+	height:100%;
+	width:100%;
+
+}
+
+.fa {
+    font: normal normal normal 20px/1 FontAwesome !important;
+}
+
+section.module {
+	padding: 6rem 0;
+}
+
+:hover,
+:focus,
+:active {
+	outline: none !important;
+}
+
+input,
+textarea,
+select,
+label{
+	font-family:inherit;
+}
+
+ul,
+ol {
+	margin:0px;
+	li {
+		margin:0px;
+	}
+}
+
+
+
+h1, .h1 {
+	font-family: $headings-font-family;
+	text-transform:uppercase;
+	font-size: rem(80);
+	line-height: 1em;
+	margin:20px 0;
+	@media screen and (max-width:$screen-md-max) {
+		font-size: rem(35);
+	}
+	@media screen and (max-width:$screen-sm-max) {
+		font-size: rem(30);
+	}
+}
+
+h2, .h2 {
+	font-family: $headings-font-family;
+	font-size: 3em;
+	padding: 2rem 0 3rem 0;
+	text-transform:uppercase;
+	@media screen and (max-width:$screen-md-max) {
+		font-size: rem(26);
+	}
+
+	@media screen and (max-width:$screen-xs-max) {
+		font-size: rem(20);
+		line-height: 1.35;
+	}
+}
+
+h3, .h3 {
+	font-family:$base-font-family;
+	@media screen and (max-width:$screen-xs-max) {
+		font-size: rem(25);
+		line-height: 1.35;
+	}
+}
+
+h4, .h4 {
+	font-family:$base-font-family;
+	font-size:1.4em;
+	font-weight:300;
+	line-height:1.3em;
+	letter-spacing:.0125em;
+	text-transform:uppercase;
+}
+
+h5, .h5 {
+	font-family:$base-font-family;
+	font-size:1.26em;
+}
+
+h6, .h6 {
+	font-family:$base-font-family;
+	text-transform:uppercase;
+	font-size: rem(17);
+	font-weight:500;
+	letter-spacing:.0125em;
+}
+
+p {
+	margin:0px;
+	line-height: 1.75;
+	letter-spacing: 0.0125em;
+	font-size:1rem;
+	font-weight:300;
+	color: $dark;
+
+	@media screen and (max-width:$screen-sm-max) {
+		font-size: rem(13);
+	}
+}
+
+a {
+	color: unset;
+	img,
+	div,
+	*:after,
+	*:before {
+		text-decoration:none;
+	}
+	&:hover {
+		text-decoration:none;
+	}
+}
+
+img.alignleft {
+	float:left;
+}
+img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.aligncenter {
+	text-align:center;
+}
+img.alignright {
+	float:right;
+}
+
+.button, button {
+	background-color: $navy;
+	padding:$button-space;
+	font-size:rem(12);
+	margin: $button-space;
+	color:$white;
+	font-weight:500;
+	letter-spacing:0.8px;
+	text-transform:uppercase;
+}

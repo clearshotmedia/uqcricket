@@ -1,0 +1,29 @@
+ // <-------- Add your variables into this file. Also add variables to overwrite Bootstrap or UnderStrap variables here
+@import "assets/bootstrap4";      // <-------- Loads Bootstrap4
+@import "theme/theme_variables";
+@import "uqcricket/uqcricket";  // <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
+@import "uqcricket/woocommerce"; // <-------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
+
+// Optional files - If you dont use the corresponding scripts/fonts comment em out
+@import "assets/font-awesome";    // <-------- Font Awesome Icon font
+
+// Any additional imported files //
+@import "theme/theme";            // <-------- That's where you can add your own design. Thats your part!
+@import "theme/contact-form7";    // <-------- Contact Form 7 - Bootstrap 4 support
+
+@import "theme/mixins";
+@import "theme/common";
+@import "theme/header";
+@import "theme/footer";
+
+
+@import "modules/coaches";
+@import "modules/four_image";
+@import "modules/hero_image";
+@import "modules/hero_stats";
+@import "modules/partners";
+@import "modules/standard_content";
+@import "modules/thin_subscribe";
+@import "modules/three_buttons";
+@import "modules/two_column_flex";
+@import "modules/upcoming_programs";

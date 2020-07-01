@@ -1,0 +1,135 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+
+
+$primary:       #83003f;
+$secondary: 	#5f002d;
+$accent: 		#2577c5;
+$navy:			#041a4d;
+$navy-red: 		#3c011d;
+$gold:			#dfca9f;
+$success: 		#009d72;
+$info: 			#7471d6;
+$warning: 		#f38801;
+$danger:		#a82433;
+$light:         #ebebee; // light grey
+$light-grey:	#ebebee;
+$grey:          #898989; //light dark grey
+$dark:			#5b5b5b;
+$white: 		#FFF;
+$black:			#000;
+
+$theme-colors: ();
+$theme-colors: map-merge((
+	"primary":    $primary,
+	"secondary":  $secondary,
+	"accent":	  $accent,
+	"success":    $success,
+	"info":       $info,
+	"warning":    $warning,
+	"danger":     $danger,
+	"light":      $light,
+	"dark":       $dark,
+	"white":	  $white,
+	"black": 	  $black,
+), $theme-colors);
+
+
+$base-font-family: 'Roboto', Arial, Verdana, sans-serif;
+$headings-font-family: 'Vincent', Arial, Verdana, sans-serif;
+
+
+
+// stylelint-disable
+$spacer: 1rem;
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: ();
+$sizes: map-merge((
+	25: 25%,
+	50: 50%,
+	75: 75%,
+	100: 100%
+), $sizes);
+// stylelint-enable
+
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom:   1rem;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1290px
+);
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+$screen-xs: map-get($grid-breakpoints, "xs");
+$screen-xs-max: map-get($grid-breakpoints, "sm") - 1;
+$screen-sm: map-get($grid-breakpoints, "sm");
+$screen-sm-max: map-get($grid-breakpoints, "md") - 1;
+$screen-md: map-get($grid-breakpoints, "md");
+$screen-md-max: map-get($grid-breakpoints, "lg") - 1;
+$screen-lg: map-get($grid-breakpoints, "lg");
+$screen-lg-max: map-get($grid-breakpoints, "xl") - 1;
+$screen-xl: map-get($grid-breakpoints, "xl");
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+	sm: 600px,
+	md: 720px,
+	lg: 960px,
+	xl: 1270px
+);
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12;
+$grid-gutter-width:           30px;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$line-height-lg:              1.5;
+$line-height-sm:              1.5;
+$button-space:					12px;
+$border-width:                1px;
+$border-color:                $gray-300;
+
+$border-radius:               5px;
+$border-radius-lg:            .3rem;
+$border-radius-sm:            .2rem;
+
+$component-active-color:      $white;
+$component-active-bg:         theme-color("primary");
+
+$caret-width:                 .3em;
+
+$transition-base:             all 0.3s ease;
+$transition-fade:             opacity .15s linear;
+$transition-collapse:         height .35s ease;
+

@@ -1,0 +1,16 @@
+.three_buttons {
+
+	.big-button {
+		box-shadow: 3px 3px 7px 3px #e1e8ed;
+    border-color: #c1c1c1;
+		border-width: 1px;
+		text-align:center;
+		border-style: solid solid solid solid;
+		border-radius:0;
+		img {
+			border-top-left-radius: 0;
+    	border-top-right-radius: 0;
+		}
+
+	}
+}

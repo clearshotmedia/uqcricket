@@ -1,0 +1,224 @@
+.top-header-3{
+	height: auto;
+	background-color: #83003f;
+	padding: 13px 12%;
+}
+
+.site-branding{
+	text-align: left;
+	float: left;
+}
+
+.social{
+	text-align: right;
+	float: right;
+}
+.social-email {
+    display:inline-block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+img.social-icon {
+    max-width: 35px;
+    padding: 0 5px;
+}
+
+.navigation-3 {
+	   background-color: #5f002d;
+    color: #f1f1f1;
+    font-weight: 500;
+    /* border-style: solid; */
+    border-top: 2px solid #dfca9f;
+}
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.top-header{
+	height: auto;
+	background-color: #83003f;
+	padding: 13px 12%;
+}
+
+.site-branding{
+	text-align: left;
+	float: left;
+}
+
+.social{
+	text-align: right;
+	float: right;
+}
+.social-email {
+    display:inline-block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+.navigation {
+	   background-color: #5f002d;
+    color: #f1f1f1;
+    font-weight: 500;
+    /* border-style: solid; */
+    border-top: 2px solid #c1a310;
+}
+.main-navigation {
+	clear: both;
+	display: block;
+	float: none;
+	text-align: center;
+	width: 100%;
+}
+.sub-menu {
+    background-color: #83003f;
+}
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+ul.children {
+	background-color: #83003f;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 100%;
+	left: -999em;
+	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	left: 100%;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation li {
+	float: none;
+	text-align: center;
+	display:inline-block;
+	position: relative;
+	padding:10px;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+	.social-mob {
+	    display:none;
+	}
+
+
+
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+	img {
+		max-width:270px;
+	}
+}
+
+@media screen and (max-width: 37.5em) {
+	.top-header-3 {
+    height: auto;
+    background-color: #83003f;
+    padding: 13px 1%;
+}
+    .social-mob {
+        display:block;
+    }
+    .social {display:none;}
+
+    button.menu-toggle{
+        display:inline-block;
+        text-align:center;
+        background:none;
+        border:none;
+    }
+
+    .site-branding {
+    text-align: center;
+    float: none;
+    }
+
+    .main-navigation li {
+    float: none;
+    text-align: left;
+    display: block;
+    position: relative;
+    padding: 10px;
+}
+
+
+}
+
+
+
+
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}

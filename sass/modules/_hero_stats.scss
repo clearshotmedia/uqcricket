@@ -1,0 +1,24 @@
+.hero_stats {
+	padding:4rem 0;
+	position:relative;
+
+	.overlay-red {
+	position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+	bottom: 0;
+	background-color: #83003f;
+    opacity: 0.4;
+	}
+
+	h1 {
+		color:$white;
+	}
+	.subtext {
+		color:$white;
+		font-weight:500;
+		letter-spacing:0.7px;
+	}
+
+}

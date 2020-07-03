@@ -39,9 +39,8 @@ ol {
 
 
 h1, .h1 {
-	font-family: $headings-font-family;
-	text-transform:uppercase;
-	font-size: rem(80);
+	font-family: $base-font-family;
+	font-size: rem(38);
 	line-height: 1em;
 	margin:20px 0;
 	@media screen and (max-width:$screen-md-max) {

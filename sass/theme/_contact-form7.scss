@@ -37,7 +37,8 @@
   input[type=submit],
   select,
   textarea {
-    @extend .form-control;
+		@extend .form-control;
+		font-family: $base-font-family;
   }
 
   // submit button, inherit .btn and .btn-outline-primary classes.
@@ -70,4 +71,30 @@
     color: theme-color("danger");
     border: 1px solid $gray-200;
   }
+}
+
+
+/* Mailchimp signup forms */
+
+#mc_embed_signup {
+	form {
+		div#mc_embed_signup_scroll{
+
+		}
+		input[type=submit] {
+			@extend .button;
+			border-radius:0;
+			height:unset;
+
+			line-height:unset;
+			font-family: $base-font-family;
+		}
+		input.email {
+			border-radius:0;
+			font-family: $base-font-family;
+
+		}
+
+	}
+
 }

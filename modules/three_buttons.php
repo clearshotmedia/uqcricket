@@ -13,7 +13,7 @@
 		<div class="card big-button">
 				<img class="card-img-top" src="<?php echo $button1['image'];?>" alt=" image">
 				<div class="card-body">
-					<h4 class="card-title"><?php echo $button1['heading']; ?></h4>
+					<h6 class="card-title"><?php echo $button1['heading']; ?></h6>
 					<p class="card-text"><?php echo $button1['text_content']; ?></p>
 
 				</div>
@@ -25,7 +25,7 @@
 		<div class="card big-button">
 				<img class="card-img-top" src="<?php echo $button2['image'];?>" alt=" image">
 				<div class="card-body">
-					<h4 class="card-title"><?php echo $button2['heading']; ?></h4>
+					<h6 class="card-title"><?php echo $button2['heading']; ?></h6>
 					<p class="card-text"><?php echo $button2['text_content']; ?></p>
 
 				</div>
@@ -37,7 +37,7 @@
 		<div class="card big-button">
 				<img class="card-img-top" src="<?php echo $button3['image'];?>" alt=" image">
 				<div class="card-body">
-					<h4 class="card-title"><?php echo $button3['heading']; ?></h4>
+					<h6 class="card-title"><?php echo $button3['heading']; ?></h6>
 					<p class="card-text"><?php echo $button3['text_content']; ?></p>
 
 				</div>

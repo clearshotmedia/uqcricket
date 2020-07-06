@@ -14,3 +14,32 @@ figure.woocommerce-product-gallery__wrapper {
 		width: 110px !important;
 	}
 }
+.woocommerce-products-header {
+    background-color: #5091cd;
+
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+.woocommerce span.onsale {
+    min-height: 50px;
+    min-width: 50px;
+    padding: 3px;
+    font-size: 1em;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    line-height: 3.236;
+    top: -.5em;
+    left: -.5em;
+    margin: 0;
+    border-radius: 100%;
+    background-color: $primary;
+    color: #fff;
+    font-size: .857em;
+    z-index: 9;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    @extend .button;
+}

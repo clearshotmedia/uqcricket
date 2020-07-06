@@ -20,7 +20,7 @@ $heading = the_sub_field('section_heading');
 				// loop through the rows of data
 				while ( have_rows('coach') ) : the_row();
 					?>
-					<div class="col-md-4">
+					<div class="col-md-4 py-4 aligncenter">
 						<div class="coach-inner">
 							<img src="<?php echo the_sub_field('image'); ?>" alt="">
 							<h5><?php echo the_sub_field('coach_name'); ?></h5>
@@ -38,7 +38,7 @@ $heading = the_sub_field('section_heading');
 										<b>Playing Experience </b> - <?php echo the_sub_field('experience'); ?>
 									</li>
 									<li>
-										<b>Coahing Philosophy </b> - <?php echo the_sub_field('philosophy'); ?>
+										<b>Coaching Philosophy </b> - <?php echo the_sub_field('philosophy'); ?>
 									</li>
 								</ul>
 						</div>

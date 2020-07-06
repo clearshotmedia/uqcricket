@@ -19,25 +19,21 @@ get_header();
 ?>
 
 <div id="page-wrapper">
-
-	<div class="page" id="content" tabindex="-1">
-
-
+	<div class="page front-page" id="content" tabindex="-1">
 			<main class="site-main" id="main">
+			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-				<?php
-				while ( have_posts() ) {
-					the_post();
-					get_template_part( 'loop-templates/content', 'page' );
+					<?php
+					while(have_rows('module')) {
+					the_row();
+					uq_theme_partial('/modules/'.get_row_layout().'.php');
+					}
+					?>
 
 
-				}
-				?>
+					</article><!-- #post-## -->
 
 			</main><!-- #main -->
-
-
-
 
 
 	</div><!-- #content -->

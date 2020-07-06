@@ -16,16 +16,35 @@ defined( 'ABSPATH' ) || exit;
 		<?php
 		if ( ! is_front_page() ) {
 			?>
-				<header class="entry-header">
+				<header class="gold-heading">
+
+				<div class="container">
+		<div class="row aligncenter">
+			<div class="col-12">
 
 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</div>
+		</div>
+	</div>
+
 
 </header><!-- .entry-header -->
 			 <?php
 		}
 		?>
 
-<?php
+
+	<div class="entry-content">
+		<div class="container py-4">
+			<div class="row">
+				<div class="col-12">
+				<?php the_content(); ?>
+				</div>
+			</div>
+		</div>
+
+	</div><!-- .entry-content -->
+	<?php
 
 while(have_rows('module')) {
 	the_row();
@@ -34,16 +53,6 @@ while(have_rows('module')) {
 }
 
 ?>
-
-
-	<div class="entry-content">
-
-		<?php the_content(); ?>
-
-
-
-	</div><!-- .entry-content -->
-
 	<footer class="entry-footer">
 
 

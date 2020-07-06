@@ -60,7 +60,22 @@ if ( ! function_exists( 'uqcricket_woocommerce_wrapper_end' ) ) {
 		echo '</div><!-- Wrapper end -->';
 	}
 }
+/**
+ * Add a 1% surcharge to your cart / checkout
+ * change the $percentage to set the surcharge to a value to suit
+ */
+add_action( 'woocommerce_cart_calculate_fees','woocommerce_custom_surcharge' );
+function woocommerce_custom_surcharge() {
+  global $woocommerce;
 
+	if ( is_admin() && ! defined( 'DOING_AJAX' ) )
+		return;
+
+	$percentage = 0.02;
+	$surcharge = ( $woocommerce->cart->cart_contents_total + $woocommerce->cart->shipping_total ) * $percentage;
+	$woocommerce->cart->add_fee( 'Handling Fee', $surcharge, true, '' );
+
+}
 if ( ! function_exists( 'uqcricket_wc_form_field_args' ) ) {
 	/**
 	 * Filter hook function monkey patching form classes

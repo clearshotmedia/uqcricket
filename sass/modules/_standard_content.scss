@@ -1,0 +1,14 @@
+#full_width_content_section {
+	padding:2rem 0;
+
+	.container{
+		.row {
+			.content {
+				h1,h2,h3,h4,h5,h6,p {
+					color:inherit;
+				}
+			}
+		}
+	}
+
+}

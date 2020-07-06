@@ -1,17 +1,24 @@
 .top-header-3{
 	height: auto;
 	background-color: #83003f;
-	padding: 13px 12%;
+	padding: 1.5rem 0;
+	border-bottom: 3px solid $gold;
 }
 
 .site-branding{
-	text-align: left;
+	left:0;
+	top:0;
 	float: left;
+	position: absolute;
 }
 
 .social{
-	text-align: right;
-	float: right;
+	top:0;
+	right:0;
+	position:absolute;
+	.fa-stack {
+		width:unset;
+	}
 }
 .social-email {
     display:inline-block;
@@ -26,13 +33,7 @@ img.social-icon {
     padding: 0 5px;
 }
 
-.navigation-3 {
-	   background-color: #5f002d;
-    color: #f1f1f1;
-    font-weight: 500;
-    /* border-style: solid; */
-    border-top: 2px solid #dfca9f;
-}
+
 
 
 
@@ -67,13 +68,14 @@ img.social-icon {
 --------------------------------------------------------------*/
 .navigation {
 	   background-color: #5f002d;
-    color: #f1f1f1;
+
     font-weight: 500;
     /* border-style: solid; */
     border-top: 2px solid #c1a310;
 }
 .main-navigation {
 	clear: both;
+	color: #f1f1f1;
 	display: block;
 	float: none;
 	text-align: center;
@@ -133,6 +135,8 @@ ul.children {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	font-size:rem(12);
+	text-transform:uppercase;
 }
 
 /* Small menu. */
@@ -160,7 +164,7 @@ ul.children {
 .custom-logo-link {
 	display: inline-block;
 	img {
-		max-width:270px;
+		max-width:240px;
 	}
 }
 

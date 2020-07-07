@@ -27,7 +27,8 @@ defined( 'ABSPATH' ) || exit;
 <header id="masthead" class="site-header">
 
 
-<div class="container-fluid top-header-3">
+<div class="contr-fluid top-header-3">
+
 <div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -47,8 +48,7 @@ defined( 'ABSPATH' ) || exit;
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-<div class="row">
-				<div class="col-12">
+
 
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="/wp-content/uploads/2018/07/menu.png"></button>
@@ -58,10 +58,8 @@ defined( 'ABSPATH' ) || exit;
 					'menu_id'        => 'main-menu',
 				) );
 				?>
-		</nav><!-- #site-navigation -->
-				</div>
-</div>
-	<div class="social">
+
+<div class="social">
         	<?php
 
         add_filter( 'woocommerce_add_to_cart_fragments', 'iconic_cart_count_fragments', 10, 1 );
@@ -71,10 +69,9 @@ function iconic_cart_count_fragments( $fragments ) {
     $fragments['div.header-cart-count'] = '<div class="header-cart-count">' . WC()->cart->get_cart_contents_count() . '</div>';
 
     return $fragments;
-
 }
         	?>
-        	    <p class="social-email"> <?php echo get_theme_mod( 'email', '' ); ?> </p>
+
         	<a href="https://www.facebook.com/UQCricketClub/"><img class="social-icon" src="/wp-content/uploads/2018/06/facebook-logo.png"></a>
         	<a href="https://twitter.com/UQCC_Blues"><img class="social-icon" src="/wp-content/uploads/2018/06/twitter-logo-silhouette.png">
         	<a href="/cart"><span class="fa-stack fa-2x has-badge" data-count="<?php echo WC()->cart->get_cart_contents_count(); ?>">
@@ -84,6 +81,10 @@ function iconic_cart_count_fragments( $fragments ) {
 
 
         </div>
+		</nav><!-- #site-navigation -->
+
+
+
 
 		</div>
 	<div class="container">

@@ -1,21 +1,21 @@
 .top-header-3{
-	height: auto;
+	height: 7rem;
 	background-color: #83003f;
-	padding: 1.5rem 0;
+//	padding: 1.5rem 2rem;
 	border-bottom: 3px solid $gold;
 }
 
 .site-branding{
-	left:0;
+	left:2rem;
 	top:0;
 	float: left;
 	position: absolute;
 }
 
 .social{
-	top:0;
-	right:0;
-	position:absolute;
+
+display:inline-block;
+
 	.fa-stack {
 		width:unset;
 	}
@@ -29,17 +29,10 @@
     text-transform: uppercase;
 }
 img.social-icon {
-    max-width: 35px;
-    padding: 0 5px;
+    max-width: 18px;
+   // padding: 0 5px;
 }
 
-
-
-
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 .top-header{
 	height: auto;
 	background-color: #83003f;
@@ -51,10 +44,6 @@ img.social-icon {
 	float: left;
 }
 
-.social{
-	text-align: right;
-	float: right;
-}
 .social-email {
     display:inline-block;
     color: #fff;
@@ -62,7 +51,6 @@ img.social-icon {
     font-size: 13px;
     text-transform: uppercase;
 }
-
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -74,41 +62,52 @@ img.social-icon {
     border-top: 2px solid #c1a310;
 }
 .main-navigation {
-	clear: both;
+
 	color: #f1f1f1;
-	display: block;
-	float: none;
-	text-align: center;
-	width: 100%;
+	display: inline;
+	float: right;
+	height: 100%;
+	ul {
+		display: none;
+		list-style: none;
+		height: 100%;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			height:auto;
+			left: -999em;
+			z-index: 99999;
+			li {
+				padding-top:10px;
+				text-align:left;
+			}
+			ul {
+				left: -999em;
+				top: 0;
+			}
+		}
+
+	}
 }
 .sub-menu {
     background-color: #83003f;
 }
-
-.main-navigation ul {
-	display: none;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
+.menu-main-container {
+	display: inline-block;
+	height: 100%;
 }
+
 
 ul.children {
 	background-color: #83003f;
 }
 
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
 
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
@@ -127,13 +126,18 @@ ul.children {
 .main-navigation li {
 	float: none;
 	text-align: center;
+	height: 100%;
 	display:inline-block;
 	position: relative;
 	padding:10px;
+	padding-top:4rem;
+	&:hover {
+		background:$secondary;
+	}
 }
 
 .main-navigation a {
-	display: block;
+	display: inline-block;
 	text-decoration: none;
 	font-size:rem(12);
 	text-transform:uppercase;
@@ -168,10 +172,10 @@ ul.children {
 	}
 }
 
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: $screen-md) {
 	.top-header-3 {
-    height: auto;
-    background-color: #83003f;
+    height: 6rem;
+    background-color: $primary;
     padding: 13px 1%;
 }
     .social-mob {

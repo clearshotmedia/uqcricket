@@ -1,0 +1,29 @@
+.junior_buttons {
+	padding:2rem 0;
+	.image-inner {
+		padding-bottom:10px;
+		img {
+			max-height:150px;
+		}
+	}
+	.content-inner {
+		border:2px solid $primary;
+		box-shadow:3px 3px 7px 3px rgba(91,91,91,0.36);
+		padding:1rem;
+		h5 {
+			color:$primary;
+		}
+		ul {
+			text-align:left;
+			li {
+				color:$accent;
+				font-size:rem(13);
+			}
+		}
+	}
+	.button-wrap {
+		button {
+
+		}
+	}
+}

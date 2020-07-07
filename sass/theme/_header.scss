@@ -63,12 +63,16 @@ img.social-icon {
     border-top: 2px solid #c1a310;
 }
 .main-navigation {
-
+	text-align:right;
 	color: #f1f1f1;
 	display: inline;
 	float: right;
 	margin-right:2rem;
 	height: 100%;
+
+	.menu-toggle{
+		display:none;
+	}
 	li {
 		float: none;
 		text-align: center;
@@ -142,10 +146,8 @@ ul.children {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
+@media screen and (min-width: $screen-lg) {
+
 
 	.main-navigation {
 		ul {
@@ -153,11 +155,8 @@ ul.children {
 
 		}
 
+	}
 
-	}
-	.social-mob {
-	    display:none;
-	}
 
 }
 
@@ -168,6 +167,30 @@ ul.children {
 		max-width:240px;
 	}
 }
+@media screen and (max-width: $screen-xl) {
+	.social {display:none;}
+	.site-branding {
+		left:0.5rem;
+		a {
+			img {
+				max-width:190px;
+			}
+		}
+	}
+	.main-navigation {
+		margin-right:0.5rem;
+			ul {
+				li {
+					padding:10px;
+					padding-top: 4rem;
+
+				}
+			}
+
+
+	}
+}
+
 
 @media screen and (max-width: $screen-lg) {
 	.top-header-3 {
@@ -180,27 +203,35 @@ ul.children {
     }
     .social {display:none;}
 
-    button.menu-toggle{
-		position:absolute;
-		right:0;
-        text-align:center;
-        background:none;
-        border:none;
-    }
+
 
     .site-branding {
     text-align: center;
     float: none;
     }
-
+	.main-navigation {
+		button.menu-toggle{
+			position:absolute;
+			right:0;
+			text-align:center;
+			background:none;
+			border:none;
+			display:block;
+		}
+	}
     .main-navigation.toggled {
 		background:$primary;
 		width:100%;
-		top:6rem;
-		position:absolute;
-		z-index: 999999999;
+
+
 		.menu-main-container {
 			height:auto;
+			position: absolute;
+			background: #83003f;
+			top: 6rem;
+			left: 0;
+			z-index: 999999999;
+			width: 100%;
 		}
 		ul {
 			height:auto;

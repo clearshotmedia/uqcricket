@@ -38,7 +38,7 @@ defined( 'ABSPATH' ) || exit;
 				<?php
 			else :
 				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+
 				<?php
 			endif;
 			$uqcricket_description = get_bloginfo( 'description', 'display' );

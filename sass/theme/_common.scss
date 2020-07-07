@@ -155,3 +155,16 @@ img.alignright {
 .btn {
 	margin:0 !important;
 }
+.btn-link.focus, .btn-link:focus {
+    text-decoration: none;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-link:hover {
+    color: unset;
+    text-decoration: none;
+}

@@ -22,7 +22,7 @@ $bgcolour = get_sub_field('background_colour');
 					// Loop through rows.
 					while( have_rows('sponsor') ) : the_row(); ?>
 
-<div class="col-md-4">
+<div class="col-md-4 my-2">
 <div class="accordian" id="accordion-<?php echo $i;?>">
 <img class="card-img-top" src="<?php the_sub_field('logo');?>" alt="Supporter image">
 					<div class="card">

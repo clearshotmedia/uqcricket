@@ -8,7 +8,7 @@ $button3 = get_sub_field('box_3');
 	<div class="container">
 		<div class="row">
 
-			<div class="col-md-4 aligncenter">
+			<div class="col-md-4 my-2 aligncenter">
 				<div class="image-inner">
 				<img src="<?php echo $button1['image'];?>" alt=" image">
 				</div>
@@ -23,7 +23,7 @@ $button3 = get_sub_field('box_3');
 				</div>
 			</div>
 
-			<div class="col-md-4 aligncenter">
+			<div class="col-md-4 my-2 aligncenter">
 				<div class="image-inner">
 				<img src="<?php echo $button2['image'];?>" alt=" image">
 				</div>
@@ -38,7 +38,7 @@ $button3 = get_sub_field('box_3');
 				</div>
 			</div>
 
-			<div class="col-md-4 aligncenter">
+			<div class="col-md-4 my-2 aligncenter">
 				<div class="image-inner">
 				<img src="<?php echo $button3['image'];?>" alt=" image">
 				</div>

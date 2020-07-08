@@ -1,5 +1,5 @@
 .supporter {
-	padding:2rem 0;
+
 	#accordion {
 		.card {
 			img {
@@ -11,7 +11,10 @@
 		}
 	}
 }
-.platinum {
+.sponsor-section {
 	padding:2rem 0;
+	h3 {
+		color:$primary;
+	}
 
 }

@@ -2,13 +2,13 @@
 $heading = get_sub_field('heading');
 $bgcolour = get_sub_field('background_colour');
 ?>
-<section class="supporter">
+<section class="supporter sponsor-section">
 	<div class="container">
 		<div class="row">
 
 <?php if($heading){ ?>
-		<div class="col-12">
-		<h5><?php echo $heading; ?></h5>
+		<div class="col-12 aligncenter">
+		<h3><?php echo $heading; ?></h3>
 		</div>
 <?php } ?>
 

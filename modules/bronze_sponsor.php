@@ -25,9 +25,9 @@ $bgcolour = get_sub_field('background_colour');
 
 <div class="col-md-4">
 <div class="accordian" id="accordion-b-<?php echo $i;?>">
-					<div class="card">
-					<img class="card-img-top" src="<?php the_sub_field('logo');?>" alt="Card image cap">
 
+<img class="card-img-top" src="<?php the_sub_field('logo');?>" alt="Card image cap">
+					<div class="card">
 					<div class="card-body">
   <h5 class="card-title"><?php the_sub_field('name');?></h5>
   <p class="card-text"><?php the_sub_field('details');?> </p>

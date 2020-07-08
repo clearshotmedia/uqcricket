@@ -26,8 +26,9 @@ $link = get_sub_field('sponsor_link');
 			<div class="col-12">
 
 			<div id="platinum">
+			<img class="card-img-top" src="<?php echo $image; ?>" alt="Platinum Sponsor">
   <div class="card">
-  <img class="card-img-top" src="<?php echo $image; ?>" alt="Card image cap">
+
 
   <div class="card-body">
   <h5 class="card-title"><?php echo $name; ?></h5>

@@ -8,9 +8,9 @@
 
 	}
 	div#footer-sidebar2 {
-		text-align: right;
+
 		.widget {
-			img.footer-logo {
+			.footer-logo {
 				max-width:200px;
 			}
 		}
@@ -21,6 +21,7 @@
 		.widget {
 			ul#menu-footer-nav {
 				list-style: none;
+				padding-inline-start: 0;
 			}
 		}
 	}

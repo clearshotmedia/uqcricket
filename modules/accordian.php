@@ -18,8 +18,8 @@ $heading = get_sub_field('heading');
 						<div class="card-header" id="heading-<?php echo $i;?>">
 						<h4 class="accordian-head">
 						<?php if ($i == 1){
-							$aria = '';
-							$show = 'show';
+							$aria = 'collapsed';
+							$show = '';
 						} else { $aria = 'collapsed'; $show = '';  }
 
 						?>

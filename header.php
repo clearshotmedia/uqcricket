@@ -49,7 +49,9 @@ defined( 'ABSPATH' ) || exit;
 		</div><!-- .site-branding -->
 
 
-
+					<div class="mob-cart">	<a href="/cart">
+			<i class="fa fa-shopping-cart"></i>
+</a></div>
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="/wp-content/uploads/2018/07/menu.png"></button>
 				<?php
@@ -72,12 +74,11 @@ function iconic_cart_count_fragments( $fragments ) {
 }
         	?>
 
-        	<a href="https://www.facebook.com/UQCricketClub/"><img class="social-icon" src="/wp-content/uploads/2018/06/facebook-logo.png"></a>
-        	<a href="https://twitter.com/UQCC_Blues"><img class="social-icon" src="/wp-content/uploads/2018/06/twitter-logo-silhouette.png">
-        	<a href="/cart"><span class="fa-stack fa-2x has-badge" data-count="<?php echo WC()->cart->get_cart_contents_count(); ?>">
-
-  <img src="/wp-content/uploads/2018/06/empty-shopping-cart.png" class="social-icon">
-</span></a>
+        	<a href="https://www.facebook.com/UQCricketClub/"><i class="fa fa-facebook"></i></a>
+        	<a href="https://twitter.com/UQCC_Blues"><i class="fa fa-twitter"></i>
+        	<a href="/cart">
+			<i class="fa fa-shopping-cart"></i>
+</a>
 
 
         </div>

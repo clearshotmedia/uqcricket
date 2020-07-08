@@ -115,6 +115,9 @@ img.social-icon {
 
 	}
 }
+.mob-cart {
+	display: none;
+}
 .sub-menu {
     background-color: #83003f;
 }
@@ -146,7 +149,7 @@ ul.children {
 	display: block;
 }
 
-@media screen and (min-width: $screen-lg) {
+@media screen and (min-width: $screen-lg + 100px) {
 
 
 	.main-navigation {
@@ -168,7 +171,7 @@ ul.children {
 	}
 }
 @media screen and (max-width: $screen-xl + 140px) {
-	.social {display:none;}
+	//.social {display:none;}
 	.site-branding {
 		left:0.5rem;
 		a {
@@ -192,7 +195,7 @@ ul.children {
 }
 
 
-@media screen and (max-width: $screen-lg) {
+@media screen and (max-width: $screen-lg +100px) {
 	.top-header-3 {
     height: 6rem;
     background-color: $primary;
@@ -202,7 +205,13 @@ ul.children {
         display:block;
     }
     .social {display:none;}
-
+	.mob-cart {
+		display: block;
+		color:$white;
+		position:absolute;
+		right:52px;
+		padding-top: 1px;
+	}
 
 
     .site-branding {
@@ -213,6 +222,7 @@ ul.children {
 		button.menu-toggle{
 			position:absolute;
 			right:0;
+			top:0;
 			text-align:center;
 			background:none;
 			border:none;

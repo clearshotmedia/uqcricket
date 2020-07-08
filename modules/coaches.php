@@ -1,5 +1,5 @@
 <?php
-$heading = the_sub_field('section_heading');
+$heading = get_sub_field('section_heading');
 
 
 ?>

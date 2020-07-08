@@ -11,5 +11,5 @@ if ($height == 'large') {
 }
 ?>
 
-<section id="full_width_image" style="background:url('<?php echo $background; ?>'); background-size:cover; height:<?php echo $vh; ?>">
+<section id="full_width_image" style="background:url('<?php echo $background; ?>'); background-size:cover; background-position:center; height:<?php echo $vh; ?>">
 </section>

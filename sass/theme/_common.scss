@@ -171,3 +171,9 @@ img.alignright {
     color: unset;
     text-decoration: none;
 }
+.fullw {
+	iframe {
+		width:100%;
+		height:100vh;
+	}
+}

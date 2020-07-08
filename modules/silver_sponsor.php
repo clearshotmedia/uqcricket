@@ -4,7 +4,7 @@ $bgcolour = get_sub_field('background_colour');
 ?>
 <section class="supporter sponsor-section">
 	<div class="container">
-		<div class="row">
+		<div class="row justify-content-around">
 
 <?php if($heading){ ?>
 		<div class="col-12 aligncenter">

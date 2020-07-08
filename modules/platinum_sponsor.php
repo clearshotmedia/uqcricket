@@ -25,21 +25,12 @@ $link = get_sub_field('sponsor_link');
 
   <div class="card-body">
   <h5 class="card-title"><?php echo $name; ?></h5>
-  <p class="card-text"><?php echo $basic; ?> </p>
+  <div class="card-text"><?php echo $basic; ?> </div>
+	<?php echo $details; ?>
   </div>
-    <div class="card-header" id="headingOne">
-      <h6 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <?php echo $btext; ?>
-        </button>
-      </h6>
-    </div>
 
-    <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#platinum">
-      <div class="card-body">
-			<?php echo $details; ?>
-      </div>
-    </div>
+
+
   </div>
 
 

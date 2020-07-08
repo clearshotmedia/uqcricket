@@ -167,7 +167,7 @@ ul.children {
 		max-width:240px;
 	}
 }
-@media screen and (max-width: $screen-xl) {
+@media screen and (max-width: $screen-xl + 140px) {
 	.social {display:none;}
 	.site-branding {
 		left:0.5rem;

@@ -23,6 +23,9 @@
 			ul#menu-footer-nav {
 				list-style: none;
 				padding-inline-start: 0;
+				li {
+					font-size:rem(14);
+				}
 			}
 		}
 	}

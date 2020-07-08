@@ -33,11 +33,11 @@ $bgcolour = get_sub_field('background_colour');
   <p class="card-text"><?php the_sub_field('details');?> </p>
   </div>
 	<div class="card-header" id="heading-s-<?php echo $i;?>">
-      <h6 class="mb-0">
+      <h4 class="accordian-head">
         <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-s-<?php echo $i;?>" aria-expanded="true" aria-controls="collapse-s-<?php echo $i;?>">
           Details
         </button>
-      </h6>
+      </h4>
     </div>
 
 		<div id="collapse-s-<?php echo $i;?>" class="collapse " aria-labelledby="heading-s-<?php echo $i;?>" data-parent="#accordion-s-<?php echo $i;?>">

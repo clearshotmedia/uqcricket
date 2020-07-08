@@ -13,6 +13,32 @@
 }
 .sponsor-section {
 	padding:2rem 0;
+	.card {
+		border-radius:0;
+		.card-header {
+			background-color:$primary;
+			border-radius:0;
+			h4.accordian-head {
+				margin-bottom:0;
+				button {
+					text-transform:unset;
+					color:$white;
+
+				}
+			}
+			h4.accordian-head > button:before {
+				right:2%;
+				position:absolute;
+				font-family: FontAwesome;
+				content:"\f068";
+				padding-right: 5px;
+			}
+			h4.accordian-head> button.collapsed:before {
+
+				content:"\f067";
+			}
+		}
+	}
 	h3 {
 		color:$primary;
 	}

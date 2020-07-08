@@ -17,15 +17,6 @@ $bgcolour = get_sub_field('background_colour');
 	<div class="container">
 		<div class="row justify-content-center">
 
-
-
-
-<!--- start col --->
-
-
-
-
-
 				<?php
 				if( have_rows('sponsor') ):
 					$i = 1; // Set the increment variable
@@ -42,11 +33,11 @@ $bgcolour = get_sub_field('background_colour');
   <p class="card-text"><?php the_sub_field('details');?> </p>
   </div>
 	<div class="card-header" id="heading-b-<?php echo $i;?>">
-      <h6 class="mb-0">
+      <h4 class="accordian-head">
         <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-b-<?php echo $i;?>" aria-expanded="true" aria-controls="collapse-b-<?php echo $i;?>">
           Details
         </button>
-      </h6>
+      </h4>
     </div>
 
 		<div id="collapse-b-<?php echo $i;?>" class="collapse " aria-labelledby="heading-b-<?php echo $i;?>" data-parent="#accordion-b-<?php echo $i;?>">

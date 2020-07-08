@@ -8,14 +8,21 @@ $basic = get_sub_field('sponsor_basic_info');
 $details = get_sub_field('sponsor_detailed_info');
 $link = get_sub_field('sponsor_link');
 ?>
+
+<?php if($heading){ ?>
+		<div class="gold-heading aligncenter">
+		<div class="container">
+			<div class="row">
+				<div class="col-12"><h3><?php echo $heading; ?></h3></div>
+			</div>
+		</div>
+
+		</div>
+<?php } ?>
 <section class="gold sponsor-section" style="background:<?php echo $background;?>">
 	<div class="container">
 		<div class="row">
-		<?php if($heading){ ?>
-		<div class="col-12 aligncenter ">
-		<h3><?php echo $heading; ?></h3>
-		</div>
-<?php } ?>
+
 
 			<div class="col-lg-10 offset-lg-1">
 
@@ -25,21 +32,12 @@ $link = get_sub_field('sponsor_link');
 
   <div class="card-body">
   <h5 class="card-title"><?php echo $name; ?></h5>
-  <p class="card-text"><?php echo $basic; ?> </p>
+  <div class="card-text"><?php echo $basic; ?> </div>
+	<?php echo $details; ?>
   </div>
-    <div class="card-header" id="heading-g">
-      <h6 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-g" aria-expanded="true" aria-controls="collapse-g">
-          <?php echo $btext; ?>
-        </button>
-      </h6>
-    </div>
 
-    <div id="collapse-g" class="collapse " aria-labelledby="heading-g" data-parent="#gold">
-      <div class="card-body">
-			<?php echo $details; ?>
-      </div>
-    </div>
+
+
   </div>
 
 

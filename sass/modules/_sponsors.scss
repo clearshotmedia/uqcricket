@@ -37,9 +37,24 @@
 		}
 	}
 }
-
+.gold-heading {
+	h3 {
+		color:$primary;
+	}
+}
 .gold {
 	.card {
+		.card-title {
+			text-align:center;
+		}
+		.card-text {
+			p {
+				text-align:center;
+				color:$primary;
+				font-weight:600;
+			}
+
+		}
 		img {
 			max-width: 400px;
 			margin: 0 auto;

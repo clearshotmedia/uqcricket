@@ -2,24 +2,22 @@
 $heading = get_sub_field('heading');
 $bgcolour = get_sub_field('background_colour');
 ?>
+
+<?php if($heading){ ?>
+		<div class="gold-heading aligncenter">
+		<div class="container">
+			<div class="row">
+				<div class="col-12"><h3><?php echo $heading; ?></h3></div>
+			</div>
+		</div>
+
+		</div>
+<?php } ?>
 <section class="supporter sponsor-section">
 	<div class="container">
 		<div class="row justify-content-around">
 
-<?php if($heading){ ?>
-		<div class="col-12 aligncenter">
-		<h3><?php echo $heading; ?></h3>
-		</div>
-<?php } ?>
-
-
-<!--- start col --->
-
-
-
-
-
-				<?php
+			<?php
 				if( have_rows('sponsor') ):
 					$i = 1; // Set the increment variable
 					// Loop through rows.

@@ -8,14 +8,20 @@ $basic = get_sub_field('sponsor_basic_info');
 $details = get_sub_field('sponsor_detailed_info');
 $link = get_sub_field('sponsor_link');
 ?>
+	<?php if($heading){ ?>
+		<div class="gold-heading aligncenter">
+		<div class="container">
+			<div class="row">
+				<div class="col-12"><h3><?php echo $heading; ?></h3></div>
+			</div>
+		</div>
+
+		</div>
+<?php } ?>
 <section class="platinum sponsor-section">
 	<div class="container">
 		<div class="row">
-		<?php if($heading){ ?>
-		<div class="col-12 aligncenter">
-		<h3><?php echo $heading; ?></h3>
-		</div>
-<?php } ?>
+
 
 			<div class="col-12">
 

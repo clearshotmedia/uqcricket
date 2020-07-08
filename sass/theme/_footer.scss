@@ -3,6 +3,36 @@
 	color: #fff;
 	text-align:center;
 	padding: 25px 10%;
+	div#footer-sidebar3 {
+		text-align: right;
+
+	}
+	div#footer-sidebar2 {
+		text-align: right;
+		.widget {
+			img.footer-logo {
+				max-width:200px;
+			}
+		}
+
+	}
+	div#footer-sidebar1 {
+		text-align: left;
+		.widget {
+			ul#menu-footer-nav {
+				list-style: none;
+			}
+		}
+	}
+	.col-sm-4 {
+		.widget {
+			.textwidget {
+					p {
+						color:$white;
+					}
+			}
+		}
+	}
 
 }
 .site-info{

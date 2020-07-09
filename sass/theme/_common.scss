@@ -30,9 +30,14 @@ label{
 
 ul,
 ol {
-	margin:0px;
+
 	li {
 		margin:0px;
+		line-height: rem(23);
+		letter-spacing: 0.0125em;
+		font-size:1rem;
+		font-weight:300;
+		color: $dark;
 	}
 }
 

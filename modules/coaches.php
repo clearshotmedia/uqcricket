@@ -3,11 +3,11 @@ $heading = get_sub_field('section_heading');
 
 
 ?>
-<section class="coaches">
+<section class="coaches" id="coaches">
 <div class="container">
-	<div class="row">
+	<div class="row aligncenter">
 		<div class="col-12">
-		<h3><?php echo $heading; ?></h3>
+		<h4><?php echo $heading; ?></h4>
 		</div>
 	</div>
 
@@ -26,19 +26,19 @@ $heading = get_sub_field('section_heading');
 							<h5><?php echo the_sub_field('coach_name'); ?></h5>
 								<ul>
 									<li>
-										<b>Nickname </b> - <?php echo the_sub_field('nickname'); ?>
+										<span class="coachinfo">Nickname </span> - <?php echo the_sub_field('nickname'); ?>
 									</li>
 									<li>
-										<b>Qualifications </b> - <?php echo the_sub_field('qualifications'); ?>
+									<span class="coachinfo">Qualifications </span> - <?php echo the_sub_field('qualifications'); ?>
 									</li>
 									<li>
-										<b>Specialisation </b> - <?php echo the_sub_field('specialisation'); ?>
+									<span class="coachinfo">Specialisation </span> - <?php echo the_sub_field('specialisation'); ?>
 									</li>
 									<li>
-										<b>Playing Experience </b> - <?php echo the_sub_field('experience'); ?>
+									<span class="coachinfo">Playing Experience </span> - <?php echo the_sub_field('experience'); ?>
 									</li>
 									<li>
-										<b>Coaching Philosophy </b> - <?php echo the_sub_field('philosophy'); ?>
+									<span class="coachinfo">Coaching Philosophy </span> - <?php echo the_sub_field('philosophy'); ?>
 									</li>
 								</ul>
 						</div>

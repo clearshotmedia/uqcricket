@@ -18,6 +18,7 @@
 					<div class="col-12 py-2">
 						<div class="program-inner">
 							<h3><?php the_sub_field('heading'); ?></h3>
+							<hr class="primary">
 							<div class="program-content">
 								<?php echo the_sub_field('information'); ?>
 							</div>

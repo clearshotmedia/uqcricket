@@ -1,9 +1,24 @@
 .coaches {
+	h4{
+		color:$primary;
+	}
 	.coach-inner {
+		border:2px solid $light-grey;
+		padding:1rem;
+		box-shadow:3px 3px 7px 3px rgba(91,91,91,0.36);
+		h5 {
+			color:$accent;
+		}
 		ul {
+			list-style:none;
+			padding-inline-start:0;
 			li {
 				text-align:left;
 				font-size:rem(13);
+				.coachinfo {
+					font-weight:700;
+					color:$secondary;
+				}
 			}
 		}
 	}

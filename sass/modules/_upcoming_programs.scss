@@ -4,7 +4,8 @@
 		color:$primary;
 	}
 	.program-inner {
-		border:1px solid $primary;
+		border:2px solid $primary;
+		box-shadow:3px 3px 7px 3px rgba(91,91,91,0.36);
 		padding:1rem;
 		h3, h5 {
 			color:$primary;

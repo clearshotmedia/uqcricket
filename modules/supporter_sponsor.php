@@ -34,7 +34,7 @@ $bgcolour = get_sub_field('background_colour');
 	<div class="card-header" id="headingOne">
       <h4 class="accordian-head">
         <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-<?php echo $i;?>" aria-expanded="true" aria-controls="collapse-<?php echo $i;?>">
-          Details
+          Sponsor Details
         </button>
       </h4>
     </div>

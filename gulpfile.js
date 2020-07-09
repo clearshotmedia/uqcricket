@@ -184,7 +184,7 @@ gulp.task( 'scripts', function() {
 		// Start - All BS4 stuff
 		paths.dev + '/js/bootstrap4/bootstrap.bundle.js',
 		paths.dev + '/js/themejs/*.js',
-
+		paths.dev + '/js/*.js',
 		// End - All BS4 stuff
 		paths.dev + '/js/navigation.js',
 		paths.dev + '/js/skip-link-focus-fix.js',

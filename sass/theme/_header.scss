@@ -80,6 +80,8 @@ img.social-icon {
 		display:inline-block;
 		position: relative;
 		padding:10px 1.5rem;
+		color:$white;
+					font-weight:400;
 		padding-top:4rem;
 		&:hover {
 			background:$secondary;

@@ -131,7 +131,14 @@ a {
 		color:inherit;
 	}
 }
-
+body {
+	.col2-set .col-1, .col2-set .col-1,
+	.col2-set .col-2, .col2-set .col-2
+	{
+		flex: none;
+		max-width: 100%;
+	}
+}
 img.alignleft {
 	float:left;
 }
